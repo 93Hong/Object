@@ -1,4 +1,4 @@
-package com.giwook.study.theater;
+package com.giwook.study.example01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
