@@ -1,4 +1,4 @@
-package com.giwook.study.ticket.domain;
+package com.giwook.study.theater;
 
 /**
  *
