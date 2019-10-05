@@ -1,23 +1,18 @@
 package com.giwook.study.ticket.domain;
 
+import lombok.AllArgsConstructor;
+
 /**
  *
  * @author 93Hong on 2019-10-05
  *
  */
+@AllArgsConstructor
 public class Theater {
 	private TicketSeller ticketSeller;
 
 	public void enter(Audience audience) {
-		if (audience.getBag().hasInvitation()) {
-			Ticket ticket = ticketSeller.getTicketOffice().getTicket();
-			audience.getBag().setTicket(ticket);
-		} else {
-			Ticket ticket = ticketSeller.getTicketOffice().getTicket();
-			audience.getBag().minusAmount(ticket.getFee());
-			ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
-			audience.getBag().setTicket(ticket);
-		}
+		ticketSeller.sellTo(audience);
 	}
 
 }

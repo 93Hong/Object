@@ -1,15 +1,18 @@
 package com.giwook.study.ticket.domain;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 
 /**
  *
  * @author 93Hong on 2019-10-05
  *
  */
-@AllArgsConstructor @Getter
+@AllArgsConstructor
 public class TicketSeller {
 	private TicketOffice ticketOffice;
+
+	public void sellTo(Audience audience) {
+		ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+	}
 
 }
