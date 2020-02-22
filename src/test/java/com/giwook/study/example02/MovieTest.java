@@ -34,7 +34,7 @@ class MovieTest {
 				new SequenceCondition(10),
 				new PeriodCondition(DayOfWeek.MONDAY, LocalTime.of(10, 0), LocalTime.of(11, 59))));
 
-		avatar.changeDiscountPolicy(new PercentDiscountPolicy(0.5, new SequenceCondition(1)));
+		 avatar.changeDiscountPolicy(new PercentDiscountPolicy(0.5, new SequenceCondition(1)));
 	}
 
 }
