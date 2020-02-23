@@ -1,8 +1,8 @@
-package com.giwook.study.example04.enumumeration;
+package com.giwook.study.enumeration;
 
 /**
  *
- * @author 93Hong on 2020-02-22
+ * @author 93Hong on 2020-02-23
  *
  */
 public enum MovieType {
