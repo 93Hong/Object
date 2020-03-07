@@ -15,4 +15,8 @@ public class Money {
 	public Money minus(Money calculateDiscountAmount) {
 		return null;
 	}
+
+	public Money plus(Money times) {
+		return null;
+	}
 }

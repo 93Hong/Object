@@ -1,0 +1,27 @@
+package com.giwook.study.inheritance.inheritance;
+
+import com.giwook.study.Money;
+
+import java.time.Duration;
+
+/**
+ *
+ * @author 93Hong on 2020-03-07
+ *
+ */
+public class RegularPhone extends Phone {
+
+	private Money amount;
+	private Duration seconds;
+
+	public RegularPhone(Money amount, Duration seconds, double taxRate) {
+		super(taxRate);
+		this.amount = amount;
+		this.seconds = seconds;
+	}
+
+	@Override
+	protected Money calculateCallFee(Call call) {
+		return amount.times((int)(call.getDuration().getSeconds() / seconds.getSeconds()));
+	}
+}
