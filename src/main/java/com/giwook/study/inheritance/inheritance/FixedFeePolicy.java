@@ -9,12 +9,12 @@ import java.time.Duration;
  * @author 93Hong on 2020-03-07
  *
  */
-public class RegularPhone extends Phone {
+public class FixedFeePolicy extends Phone {
 
 	private Money amount;
 	private Duration seconds;
 
-	public RegularPhone(Money amount, Duration seconds) {
+	public FixedFeePolicy(Money amount, Duration seconds) {
 		this.amount = amount;
 		this.seconds = seconds;
 	}

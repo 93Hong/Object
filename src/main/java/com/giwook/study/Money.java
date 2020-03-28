@@ -8,7 +8,7 @@ package com.giwook.study;
 public class Money {
 	public static final Money ZERO = null;
 
-	public Money times(int audienceCount) {
+	public Money times(long audienceCount) {
 		return null;
 	}
 

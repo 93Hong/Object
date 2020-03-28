@@ -9,7 +9,7 @@ import java.time.Duration;
  * @author 93Hong on 2020-03-08
  *
  */
-public class TaxableRegularPhone extends RegularPhone {
+public class TaxableRegularPhone extends FixedFeePolicy {
 
 	private double taxRate;
 
