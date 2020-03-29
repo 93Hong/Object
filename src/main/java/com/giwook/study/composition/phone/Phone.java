@@ -29,4 +29,7 @@ public class Phone {
 		return ratePolicy.calculateFee(this);
 	}
 
+	public void call(Call call) {
+
+	}
 }
