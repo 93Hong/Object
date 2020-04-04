@@ -15,6 +15,7 @@ public class Screening {
 	private int sequence;
 	@Getter
 	private LocalDateTime whenScreening;
+	private Money movieFee;
 
 	public Reservation reserve(Customer customer, int audienceCount) {
 		return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
@@ -23,5 +24,13 @@ public class Screening {
 	private Money calculateFee(int audienceCount) {
 
 		return movie.calculateMovieFee(this).times(audienceCount);
+	}
+
+	public Money getMovieFee() {
+		return movieFee;
+	}
+
+	public void setMovieFee(Money movieFee) {
+		this.movieFee = movieFee;
 	}
 }
